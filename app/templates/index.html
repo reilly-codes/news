@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% import 'macro.html' as macro %}
+
+{% block content %}
+    <div class="sports container">
+        <h3 class="mb-3">Top Headlines</h3>
+        {{ macro.newsCategoryTrending(gen) }}
+    </div>
+    <hr>
+    <div class="sports container">
+        <a href="/sports"><h3 class="mb-3">Sports</h3></a>
+        {{ macro.newsCategoryTrending(sports) }}
+    </div>
+    <hr>
+    <div class="sports container">
+        <a href="/ent"><h3 class="mb-3">Entertainment</h3></a>
+        {{ macro.newsCategoryTrending(entertainment) }}
+    </div>
+    <hr>
+    <div class="sports container">
+        <a href="/health"><h3 class="mb-3">Health</h3></a>
+        {{ macro.newsCategoryTrending(health) }}
+    </div>
+    <hr>
+    <div class="sports container">
+        <a href="/biz"><h3 class="mb-3">Business</h3></a>
+        {{ macro.newsCategoryTrending(business) }}
+    </div>
+    <hr>
+    <div class="sports container">
+        <a href="/science"><h3 class="mb-3">Science</h3></a>
+        {{ macro.newsCategoryTrending(science) }}
+    </div>
+    <hr>
+    <div class="sports container">
+        <a href="/tech"><h3 class="mb-3">Technology</h3></a>
+        {{ macro.newsCategoryTrending(tech) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% import 'macro.html' as macro %}
+
+{% block content %}
+    <h2>Entertainment News</h2>
+    <div class="container">
+        {{ macro.newsCategoryTrending(ent) }}
+    </div>
+{% endblock %}

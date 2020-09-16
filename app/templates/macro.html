@@ -1,0 +1,21 @@
+{% macro newsCategoryTrending(category) %}
+
+    {% for news in category %}
+        <div class="container card mb-2">
+            {% if news.title %}
+                <div class="title">
+                    <h5 class="mt-2"> {{ news.title}} </h5>
+                </div>
+                <div class="desc">
+                    <p> {{ news.description }} </p>
+                </div>
+                <div class="read text-center">
+                    <form action=" {{news.url}} " target="blank">
+                        <input class="text-centre btn btn-danger mb-3" type="submit" value="Read Mores">
+                    </form>
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+{% endmacro %}
